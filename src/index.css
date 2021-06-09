@@ -7,6 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* To define root variables, go to index.css and do the following */
+/* We will now add fonts, I will add fonts of my choice and you can add fonts you like. To browse different fonts, go to fonts.google.com */
+/* We will now add bootstrap CDN, you can find the link on google. */
+:root {
+  --primary-color : #2541b2;
+  --secondary-color: #47bbdf;
+  --font : 'Poppins', sans-serif;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
