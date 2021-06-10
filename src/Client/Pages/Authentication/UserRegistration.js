@@ -10,7 +10,7 @@ import Button from "../../../Shared/Components/Button";
 import Input from "../../../Shared/Components/Input";
 import "./SignIn.css";
 
-function SignUp() {
+function UserRegistration() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
@@ -18,8 +18,11 @@ function SignUp() {
       <Row className="auth-row">
         <Col md={12} sm={12} lg={7} className="auth-form-div">
           <img src={logo} alt="Logo" />
-          <h4>Sign Up</h4>
-          <p>Check out an entire universe of products</p>
+          <h4>My Details</h4>
+          <p>
+            Please enter your details below so we could get your favourite
+            products delivered to your doorsteps
+          </p>
           <Row className="divider-div">
             <Col lg={4}>
               <hr className="or-divider" />
@@ -34,44 +37,57 @@ function SignUp() {
           <Row>
             <Col>
               <Input
+                name="firstName"
+                type="text"
+                label="First Name"
+                id="firstName"
+                placeholder="First Name"
+              />
+            </Col>
+            <Col>
+              <Input
+                name="lastName"
+                type="text"
+                label="Last Name"
+                id="lastName"
+                placeholder="Last Name"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Input
                 name="email"
                 type="email"
                 label="Email"
                 id="email"
-                placeholder="Your email address"
+                placeholder="Email"
+              />
+            </Col>
+            <Col>
+              <Input
+                name="phone"
+                type="text"
+                label="Phone Number"
+                id="phone"
+                placeholder="Phone Number"
               />
             </Col>
           </Row>
-          <Input
-            name="password"
-            type={showPassword ? "text" : "password"}
-            label="Password"
-            id="password"
-            placeholder="Your password"
-          />
-          <Row>
-            <Col className="showpass-col">
-              <Form.Check
-                type="checkbox"
-                label="Show Password"
-                checked={showPassword}
-                onClick={() => {
-                  setShowPassword((prev) => {
-                    return !prev;
-                  });
-                }}
-              />
-            </Col>
-            <Col className="link-col">
-            </Col>
-          </Row>
-          <Button text="Sign Up" />
-          <div className="create-account">
-            Already registered?&nbsp;&nbsp;
-            <Link to="/signin" className="link">
-              Sign In instead
-            </Link>
+          <div className="input-div">
+            <label className="input-label" for="address">
+              Address
+            </label>
+            <textarea
+              id="address"
+              name="address"
+              className="input"
+              placeholder="Address"
+              rows={3}
+              
+            />
           </div>
+          <Button text="Register" />
         </Col>
         <Col md={0} sm={0} lg={5} className="auth-info-col">
           <div className="auth-info-main-div">
@@ -97,4 +113,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default UserRegistration;
