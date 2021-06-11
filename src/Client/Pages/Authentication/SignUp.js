@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Card, Col, Form, Row } from "react-bootstrap";
-import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
 import logo from "../../../Assets/Images/logo.png";
@@ -21,13 +20,13 @@ function SignUp() {
           <h4>Sign Up</h4>
           <p>Check out an entire universe of products</p>
           <Row className="divider-div">
-            <Col lg={4}>
+            <Col  lg={4} md={3} sm={3} xs={3}>
               <hr className="or-divider" />
             </Col>
-            <Col lg={4} className="or-text">
+            <Col lg={4} md={6} sm={6} xs={6} className="or-text">
               Enter the following details
             </Col>
-            <Col lg={4}>
+            <Col lg={4} md={3} sm={3} xs={3}>
               <hr className="or-divider" />
             </Col>
           </Row>

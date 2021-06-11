@@ -1,12 +1,12 @@
 .auth-row {
-    height: 760px !important;
+    height: 100vh !important;
     font-family: var(--font);
     margin: 0 !important;
 }
 
 .auth-info-main-div {
     width: 100%;
-    height: 760px !important;
+    height: 100vh !important;
     background: linear-gradient(30deg, var(--primary-color), var(--secondary-color));
 }
 
@@ -168,4 +168,151 @@
 .create-account {
     margin-top: 12px;
     font-size: 14px;
+}
+
+@media screen and (max-width : 1496px) {
+    .auth-main-div {
+        height: 100vh !important;
+        overflow: hidden !important;
+    }
+
+    .auth-row,
+    .auth-form-div,
+    .auth-info-main-div {
+        margin-top: -1px !important;
+    }
+}
+
+@media screen and (max-width : 1350px) {
+    .card-one {
+        top: 40px;
+        left: 40px;
+    }
+
+    .card-two {
+        top: 270px;
+        left: 200px;
+    }
+
+    .auth-info-text {
+        bottom: 60px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width : 1220px) {
+
+    .auth-info-card {
+        height: 220px;
+        width: 280px;
+    }
+
+    .auth-info-card img {
+        height: 110px;
+    }
+
+    .card-one {
+        top: 60px;
+        left: 40px;
+    }
+
+    .card-two {
+        top: 260px;
+        left: 200px;
+    }
+
+    .auth-info-main-div h1 {
+        bottom: 160px;
+        left: 80px;
+    }
+
+    .auth-info-text {
+        bottom: 100px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width : 1180px) {
+
+    .auth-info-card {
+        height: 220px;
+        width: 240px;
+    }
+
+    .auth-info-card img {
+        height: 100px;
+    }
+
+    .auth-info-main-div h1 {
+        bottom: 160px;
+        left: 60px;
+    }
+}
+
+@media screen and (max-width : 1080px) {
+
+    .card-one {
+        top: 60px;
+        left: 20px;
+    }
+
+    .card-two {
+        top: 260px;
+        left: 180px;
+    }
+
+    .auth-info-main-div h1 {
+        bottom: 160px;
+        left: 40px;
+    }
+}
+
+@media screen and (max-width : 1040px) {
+
+    .card-one {
+        top: 60px;
+        left: 10px;
+    }
+
+    .card-two {
+        top: 260px;
+        left: 165px;
+    }
+
+    .auth-info-main-div h1 {
+        bottom: 160px;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .auth-info-col {
+        display: none !important;
+    }
+
+    .auth-form-div {
+        padding: 40px
+    }
+}
+
+@media screen and (max-width : 470px) {
+    .google-signin-btn {
+        padding: 12px 15%;
+    }
+}
+
+@media screen and (max-width : 366px) {
+    .google-signin-btn {
+        padding: 12px 10%;
+    }
+
+    .or-text {
+        font-size: 10px;
+    }
+
+    .showpass-col,
+    .link,
+    .create-account {
+        font-size: 12px;
+    }
 }
