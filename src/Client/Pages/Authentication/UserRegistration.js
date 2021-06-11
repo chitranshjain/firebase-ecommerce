@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import { Card, Col, Form, Row } from "react-bootstrap";
-import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Card, Col, Row } from "react-bootstrap";
 
 import logo from "../../../Assets/Images/logo.png";
 import fastdelivery from "../../../Assets/SVGs/fastdelivery.svg";
@@ -11,7 +9,6 @@ import Input from "../../../Shared/Components/Input";
 import "./SignIn.css";
 
 function UserRegistration() {
-  const [showPassword, setShowPassword] = useState(false);
 
   return (
     <div className="auth-main-div">

@@ -44,13 +44,13 @@ function SignIn() {
             Sign In With Google
           </button>
           <Row className="divider-div">
-            <Col lg={4}>
+            <Col lg={4} md={3} sm={3} xs={3}>
               <hr className="or-divider" />
             </Col>
-            <Col lg={4} className="or-text">
+            <Col lg={4} md={6} sm={6} xs={6} className="or-text">
               or Sign in with Email
             </Col>
-            <Col lg={4}>
+            <Col lg={4} md={3} sm={3} xs={3}>
               <hr className="or-divider" />
             </Col>
           </Row>
